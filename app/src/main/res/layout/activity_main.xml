@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/wave_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/header"
+        android:src="@drawable/ic_wave"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        />
+    <ImageView
+        android:id="@+id/wave_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_wave_baixo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:rotationX="180"
+        android:rotationY="180"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/wave_bottom"
+        android:layout_below="@+id/wave_top"
+        />
+
+
+
+
+
+</RelativeLayout>
