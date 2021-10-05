@@ -11,7 +11,7 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
+        android:background="@color/cor_primaria_dark"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
@@ -51,7 +51,7 @@
     <ImageView
         android:id="@+id/wave_bottom"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_wave_baixo"
         android:layout_alignParentEnd="true"
@@ -131,11 +131,57 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/login_activity_entrar"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
                 />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_activity_lembrar_me"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_activity_esqueci_a_senha"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_gravity="end"
+                android:textAllCaps="false"
+                android:padding="0dp"
+                android:layout_marginTop="-20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="-20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_activity_nao_tem_uma_conta"
+                    android:layout_marginEnd="4dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:text="Criar uma conta AGORA"
+                    android:textAllCaps="false"
+                    android:padding="0dp"
+                    />
+            </LinearLayout>
 
 
         </LinearLayout>
 
     </ScrollView>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_activity_desenvolvido_por_ajaxx7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        />
 </RelativeLayout>
