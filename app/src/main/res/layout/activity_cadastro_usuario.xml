@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".cadastro_1">
+    tools:context=".CadastroUsuario">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,6 +83,7 @@
                 app:hintTextColor="@color/cor_primaria_dark">
 
                 <EditText
+                    android:id="@+id/edit_novo_email"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="5dp"
@@ -202,10 +203,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sexo"
                 android:layout_marginTop="16dp"
-                android:textSize="16dp"
-                />
+                android:text="Sexo"
+                android:textSize="16dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -214,22 +214,22 @@
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="8dp">
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/radio_feminino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Feminino"
-                        />
+                        android:text="Feminino" />
+
                     <RadioButton
                         android:id="@+id/radio_masculino"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Masculino"
-                        />
+                        android:text="Masculino" />
                 </RadioGroup>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3dp"

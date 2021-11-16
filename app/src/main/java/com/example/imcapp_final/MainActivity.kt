@@ -3,7 +3,6 @@ package com.example.imcapp_final
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -19,12 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         botaoEntrar.setOnClickListener {
             //Criar uma intent(intenção)
-            val abrirCadastro = Intent (this, cadastro_1::class.java)
+            val abrirCadastro = Intent(this, CadastroUsuario::class.java)
             startActivity(abrirCadastro)
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        return super.onCreateOptionsMenu(menu)
     }
 }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IMCAppFinal">
         <activity android:name=".menu_cadastro"></activity>
-        <activity android:name=".cadastro_1" />
+        <activity android:name=".CadastroUsuario" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
